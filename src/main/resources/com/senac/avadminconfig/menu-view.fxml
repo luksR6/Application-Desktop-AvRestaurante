@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senac.avadminconfig.controllers.MenuController">
+   <children>
+      <Button layoutX="39.0" layoutY="159.0" mnemonicParsing="false" onAction="#abrirMenuTesteBanco" text="Teste API Banco" />
+      <Button layoutX="194.0" layoutY="159.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="76.0" text="Sair" />
+      <Button layoutX="194.0" layoutY="42.0" mnemonicParsing="false" onAction="#cadastro" prefHeight="25.0" prefWidth="76.0" text="Cadastrar" />
+   </children>
+</AnchorPane>
