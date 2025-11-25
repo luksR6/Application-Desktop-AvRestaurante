@@ -24,8 +24,8 @@ public class CadastrarController {
     private TextField txtEmail;
     @FXML
     private PasswordField txtSenha;
-    @FXML
-    private TextField txtRole;
+
+    @FXML private TextField txtCpf;
 
     @FXML
     public void salvar(ActionEvent event) {
@@ -33,7 +33,8 @@ public class CadastrarController {
         String nome = txtNome.getText();
         String email = txtEmail.getText();
         String senha = txtSenha.getText();
-        String role = txtRole.getText();
+        String cpf = txtCpf.getText();
+
 
 
         if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
@@ -42,12 +43,12 @@ public class CadastrarController {
             return;
         }
 
-
         Usuario novoUsuario = new Usuario();
         novoUsuario.setNome(nome);
         novoUsuario.setEmail(email);
         novoUsuario.setSenha(senha);
-        novoUsuario.setRole(role);
+        novoUsuario.setCpf(cpf);
+        novoUsuario.setRole("ROLE_ADMIN_NORMAL");
 
         try {
             EntityManager em = JPAUtils.getEntityManager();
@@ -66,7 +67,6 @@ public class CadastrarController {
 
     @FXML
     void voltar(ActionEvent event) throws IOException {
-        // Certifique-se de que o caminho para o menu-view.fxml está correto
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/senac/avadminconfig/menu-view.fxml"));
         Scene scene = new Scene(loader.load());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -85,8 +85,7 @@ public class CadastrarController {
     private void limparCampos() {
         txtNome.clear();
         txtEmail.clear();
-        txtRole.clear();
         txtSenha.clear();
+        txtCpf.clear();
     }
 }
-

@@ -14,6 +14,7 @@ public class Usuario {
     private String email;
     private String senha;
     private String role;
+    private String cpf;
 
     // Construtor vazio é necessário para o JPA
     public Usuario() {
@@ -58,5 +59,13 @@ public class Usuario {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }

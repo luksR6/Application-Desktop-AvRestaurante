@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="261.0" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senac.avadminconfig.controllers.CadastrarController">
+<AnchorPane prefHeight="261.0" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senac.avadminconfig.controllers.CadastrarController">
    <children>
       <Button layoutX="181.0" layoutY="222.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
 
@@ -16,8 +16,8 @@
       <Label layoutX="38.0" layoutY="129.0" text="Senha" />
       <PasswordField fx:id="txtSenha" layoutX="80.0" layoutY="125.0" />
 
-      <Label layoutX="41.0" layoutY="172.0" text="Role" />
-      <TextField fx:id="txtRole" layoutX="80.0" layoutY="168.0" />
+      <Label layoutX="41.0" layoutY="173.0" text="CPF" />
+      <TextField fx:id="txtCpf" layoutX="80.0" layoutY="169.0" />
 
       <Button layoutX="42.0" layoutY="222.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
    </children>
